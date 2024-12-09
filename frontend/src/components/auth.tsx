@@ -13,7 +13,7 @@ export const Auth = ({ type }: { type: "signin" | "signup" }) => {
   });
   const navigate = useNavigate()
   async function sendData(){
-    const endpoint = type =="signup" ?'/api/v1/user/signup' : 'api/v1/user/signin'
+    const endpoint = type =="signup" ?'api/v1/user/signup' : 'api/v1/user/signin'
   try {
     const res = await axios.post(`${backendUrl}/${endpoint}`, { 
       email: postInput.email, name: postInput.name, password: postInput.password 
