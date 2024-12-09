@@ -4,7 +4,7 @@ interface NameAvatarProps {
     h?: number;
   }
   
-  export const NameAvatar = ({ name, w, h }: NameAvatarProps) => {
+  export const NameAvatar = ({ name }: NameAvatarProps) => {
     return (
       <div
         className="flex items-center justify-center w-7 h-7 overflow-hidden bg-slate-600 rounded-full "
